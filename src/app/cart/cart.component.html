@@ -1,0 +1,49 @@
+
+<app-menuclient></app-menuclient>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+ <body>
+<div class="Cart-Container">
+    
+    <div class="Header">
+        <i class="fa fa-shopping-cart" style="font-size:36px"></i>
+        <h3 class="Heading">Shopping Cart</h3>
+        <li *ngIf="cartBooks.length > 0">
+        <h5 class="Action" (click)="emptyCart()">Remove all</h5>
+        </li>
+        </div>
+   
+    <table  class="table table-dark">
+        <thead style="background-color: #fff2; border: none;" class="mb-5">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th> 
+            </tr>
+          </thead>
+         
+          
+      
+            
+        <tbody>
+            <tr *ngFor="let item of cartBooks">      
+               <td><div class="col-md-8" *ngIf="item">{{item.name}}</div></td> 
+               <td><div class="col-md-4" *ngIf="item"><strong>{{item.price}}DH</strong></div></td>
+               
+                
+            </tr>
+            <td align="left"><button class="btn btn-success" routerLink="/shop">Continue Shopping</button></td>
+            <td align="right"><button class="btn btn-success" routerLink="/order">Order</button></td>
+        </tbody>
+        
+           
+        
+        
+        
+       
+  
+    </table>
+    <br>
+   
+  </div>
+</body>
