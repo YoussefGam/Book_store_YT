@@ -1,6 +1,20 @@
 # BookStore
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+# How to Run
+Start the backend server before the frontend client.
+# Backend
+Install mysql workbench.
+Mysql Workbench is running on localhost:3306.
+Create your own DATABASE and change the database name in application.properties.
+Run your backend code with IntelliJ, Spring Tool suite.
+Hibernate will create a table of users and books.
+The backend server is running on localhost:8080.
+# Frontend
+Navigate to the folder that contains your frontend code in your CMD.
+Run 'ng serve'.
+Navigate to 'http://localhost:4200/'.
+Enjoy.
 
 ## Development server
 
